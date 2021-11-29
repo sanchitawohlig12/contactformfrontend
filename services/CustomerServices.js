@@ -2,7 +2,7 @@ import http from "../http-common";
 
 class CustomerService {
     getAll() {
-        return http.get("/customers");
+        return http.post("/customers");
     }
 
     // get(id) {
@@ -29,7 +29,8 @@ class CustomerService {
     //     return http.get(`/tutorials?title=${title}`);
     // }
     findByfirstName(data) {
-        return http.get("/customers/key", data);
+        // console.log("error", data)
+        return http.post("/customers/key", data);
     }
 }
 
