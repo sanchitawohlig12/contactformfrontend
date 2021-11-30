@@ -495,31 +495,42 @@
         </tr>
       </tbody>
     </table> -->
-    <div class="container" style="background-color: skyblue" align="center">
+    <div class="container" align="center" style="border: 5px solid blue">
       <div class="row">
         <div class="col-md-4">
           <h4>
             Full Name: <span></span> {{ this.customers.firstName }}
             {{ this.customers.middleName }} {{ this.customers.surName }}
           </h4>
+          <hr class="hr" />
         </div>
         <div class="col-md-4">
           <h4>Age: <span></span> {{ this.customers.age }}</h4>
+          <hr class="hr" />
         </div>
+
         <div class="col-md-4">
           <h4>Mobile: <span></span> {{ this.customers.mobile }}</h4>
+          <hr class="hr" />
         </div>
         <div class="col-md-4">
           <h4>Gender: <span></span> {{ this.customers.gender }}</h4>
+          <hr class="hr" />
         </div>
+
         <div class="col-md-4">
           <h4>Village: <span></span> {{ this.customers.village }}</h4>
+          <hr class="hr" />
         </div>
+
         <div class="col-md-4">
           <h4>Address: <span></span> {{ this.customers.address }}</h4>
+          <hr class="hr" />
         </div>
+
         <div class="col-md-4">
           <h4>Blood Group: <span></span> {{ this.customers.bloodGroup }}</h4>
+          <hr class="hr" />
         </div>
       </div>
     </div>
@@ -671,5 +682,10 @@ export default {
 .cantainer {
   display: grid;
   place-content: center;
+  /* border: 5px solid blue; */
+}
+hr.hr {
+  border: 1px solid blue;
+  background-color: blue;
 }
 </style>
