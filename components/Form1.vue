@@ -544,7 +544,6 @@ export default {
       id: null,
       first: '',
       middle: '',
-      last:'',
       sur: '',
 
       age: '',
